@@ -29,7 +29,6 @@ cd
 sudo apt-get install -y ufw
 sudo ufw allow ssh/tcp
 sudo ufw logging on
-#sudo ufw enable
 sudo ufw status
 
 mkdir -p ~/bin
@@ -99,5 +98,6 @@ echo "masternodeprivkey=$PRIVKEY" >> $CONF_DIR/$CONF_FILE
 echo "masternode=1" >> $CONF_DIR/$CONF_FILE
 echo "" >> $CONF_DIR/$CONF_FILE
 sudo ufw allow $PORT/tcp
+sudo ufw enable
 
 ./myced -daemon
