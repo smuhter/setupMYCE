@@ -30,6 +30,7 @@ cd
 
 sudo apt-get install -y ufw
 sudo ufw allow ssh/tcp
+sudo ufw allow 23511
 sudo ufw logging on
 sudo ufw status
 
