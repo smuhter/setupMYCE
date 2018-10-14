@@ -39,8 +39,11 @@ echo 'export PATH=~/bin:$PATH' > ~/.bash_aliases
 source ~/.bashrc
 
 
-git clone https://github.com/mycelliumcoin/MycelliumMN
-cd MycelliumMN/src/leveldb && chmod 777 * && cd .. && make -f makefile.unix
+#git clone https://github.com/mycelliumcoin/MycelliumMN
+#cd MycelliumMN/src/leveldb && chmod 777 * && cd .. && make -f makefile.unix
+
+git clone https://github.com/myceworld/myce/
+cd myce/src/leveldb && chmod 750 * && cd .. && make -f makefile.unix
 
 
 echo ""
